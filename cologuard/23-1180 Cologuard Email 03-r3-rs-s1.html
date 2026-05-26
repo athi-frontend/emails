@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <title>Cologuard</title>
+    <style type="text/css">
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      .p-padding {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .superscript_12_1 {
+        font-size: 12px;
+        line-height: 0px;
+      }
+      .superscript_10 {
+        font-size: 8px;
+        line-height: 0px;
+      }
+      .superscript_8 {
+        font-size: 8px;
+        line-height: 0px;
+        vertical-align: 3px;
+      }
+      .nobr {
+        white-space: nowrap;
+      }
+      a[x-apple-data-detectors] {
+        color: #63666a !important;
+        text-decoration: none !important;
+      }
+      .link_col.windows-link {
+        pointer-events: none !important;
+      }
+      th.banner-text {
+        text-align: left;
+        font-weight: unset;
+      }
+      .line-top-align a {
+        pointer-events: none;
+        cursor: unset;
+      }
+      .outlook-br {
+        display: none;
+      }
+      img.kol-img {
+        pointer-events: none !important;
+        cursor: unset !important;
+      }
+      .download-icon div,
+      img + div,
+      img.g-img + div,
+      .a6S {
+        display: none;
+      }
+      .g-img {
+        cursor: unset !important;
+      }
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+        color: inherit !important;
+      }
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+      /* What it does: Replaces default bold style. */
+      th {
+        font-weight: normal;
+      }
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 320px !important;
+        }
+        .email-container {
+          width: 320px !important;
+        }
+      }
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+      /* Start Mobile styles */
+      @media only screen and (max-width: 640px) {
+        .email-container {
+          width: 360px;
+          margin: auto !important;
+        }
+        th.banner-text {
+          padding-left: 22px !important;
+        }
+        .mobile-right {
+          padding-right: 0px !important;
+        }
+        .superscript_12_1 {
+          font-size: 10px !important;
+          line-height: 0px;
+        }
+        .desktop-br {
+          display: none !important;
+        }
+        .img-height {
+          height: auto !important;
+        }
+        .text-box {
+          font-size: 14px !important;
+          line-height: 16px !important;
+          width: 60% !important;
+        }
+        .link_col {
+          color: #000000 !important;
+          text-decoration: none !important;
+        }
+        .link_col1 {
+          color: #000000 !important;
+        }
+        .mobile-width {
+          display: block !important;
+          width: 100% !important;
+        }
+        .map_text1 {
+          width: 44% !important;
+        }
+        .map_text {
+          width: 56% !important;
+        }
+        .button-width {
+          width: 100% !important;
+        }
+        .full-width {
+          width: 100% !important;
+        }
+        table,
+        td {
+          width: 100%;
+          margin: 0 auto;
+        }
+        .map_text {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+        .footer-logo {
+          width: 208px !important;
+          height: auto !important;
+        }
+        .mobile-padding {
+          padding-left: 22px !important;
+          padding-right: 22px !important;
+        }
+        .align-top {
+          padding-bottom: 15px !important;
+        }
+        td.annual {
+          font-size: 8.5px !important;
+          height: 22px !important;
+        }
+        td.img-layer1 {
+          padding-left: 16px !important;
+          width: 20% !important;
+        }
+        td.img-layer2 {
+          padding-right: 16px !important;
+          width: 20% !important;
+        }
+        td.did_you_know {
+          padding-bottom: 2px !important;
+          padding-top: 8px !important;
+        }
+        img.bracket_img {
+          width: 18px !important;
+          height: 126px !important;
+        }
+        .mob-font {
+          font-size: 8px !important;
+          vertical-align: 5px !important;
+        }
+        img.diduknow_img {
+          width: 145px !important;
+        }
+        .mob-none {
+          display: none !important;
+        }
+        td.mobile-top {
+          padding-top: 15px !important;
+        }
+      }
+      /* End Mobile styles */
+      @supports (-webkit-touch-callout: none) {
+      }
+    </style>
+    <!--[if mso]>
+      <style type="text/css">
+        .superscript_11 {
+          font-size: 17px !important;
+          line-height: 0px !important;
+          vertical-align: 0px !important;
+        }
+        .pov-superscript {
+          font-size: 13px !important;
+          line-height: 0px !important;
+          vertical-align: 0.5px !important;
+        }
+        .superscript_10 {
+          font-size: 11px !important;
+          line-height: 0px !important;
+          vertical-align: 0px !important;
+        }
+        .superscript_8 {
+          font-size: 12px !important;
+          line-height: 0px !important;
+          vertical-align: 0px !important;
+        }
+        .superscript-9 {
+          font-size: 13px !important;
+          line-height: 0px !important;
+          vertical-align: 0px !important;
+        }
+        .sup-9 {
+          font-size: 12px !important;
+          line-height: 0px !important;
+          vertical-align: 2px !important;
+        }
+        .superscript_12_1 {
+          font-size: 14px !important;
+          line-height: 0px !important;
+          vertical-align: 5px !important;
+        }
+        .link_col {
+          color: #000000 !important;
+          text-decoration: none !important;
+        }
+        .link_col1 {
+          color: #000000 !important;
+        }
+        a.windows-link {
+          text-decoration: none;
+          color: #000000;
+        }
+        .line-top-align {
+          padding-bottom: 20px !important;
+          padding-right: 0px !important;
+        }
+        span.reg {
+          font-size: 6.5px !important;
+          line-height: 10px !important;
+        }
+        .outlook-br {
+          display: block !important;
+        }
+        .did_you_know {
+          padding-top: 8px !important;
+          padding-bottom: 0px !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly">
+    <div style="display: none; max-height: 0px; overflow: hidden">[{pre_header}]</div>
+    <div style="display: none; max-height: 0px; overflow: hidden">
+      &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>  
+    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table role="presentation" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td align="center" class="pattern" style="width: 480px; font-family: Arial, sans-serif" width="480">
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="left" style="font-family: Arial, sans-serif; font-size: 14px" width="480">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="480">
+                              <tbody>
+                                <tr>
+                                  <td border="0" width="480">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td width="480" align="center" style="font-family: Arial, sans-serif">
+                                            <table role="presentation" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="480" valign="top">
+                                                    <table role="presentation" width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                      <tr>
+                                                        <td valign="top">
+                                                          <table role="presentation" width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                              <td border="0">
+                                                                <a href="https://www.cologuardhcp.com/" target="_blank">
+                                                                  <img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/nR5r34ELzVCByJ6pIbWUeuwN90x72gGM8ZHvohct.jpg" style="display: block" alt="Cologuard logo" width="480" class="full-width" />
+                                                                </a>
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="white_space" border="0" bgcolor="#0087ed">
+                                                                <table role="presentation" width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                                  <tr>
+                                                                    <th align="top" valign="bottom" style="padding-left: 26px; padding-top: 10px; font-family: Arial, sans-serif" width="65%" class="banner-text">
+                                                                      <p class="p-padding" style="font-size: 14px; color: #ffffff; font-family: Arial, sans-serif; line-height: 18px">
+                                                                        <strong style="line-height: 18px">[{Cologuard_POV__c}]</strong>
+                                                                      </p>
+                                                                      <p class="p-padding" style="font-size: 11px; color: #ffffff; margin-top: 15px; font-family: Arial, sans-serif; line-height: 13px; margin-bottom: 0; padding-bottom: 0; padding-top: 0px">
+                                                                        <strong>[{Cologuard_KOLname__c}]</strong>
+                                                                      </p>
+                                                                      <p class="p-padding" style="font-size: 10px; color: #ffffff; font-family: Arial, sans-serif; line-height: 12px; font-weight: normal; margin-top: 0px; margin-bottom: 0">[{Cologuard_KOLtitle__c}]</p>
+                                                                      <p class="p-padding" style="font-size: 10px; color: #ffffff; font-family: Arial, sans-serif; line-height: 12px; font-weight: normal; margin-top: 0px; margin-bottom: 0">[{Cologuard_KOLaffiliation__c}]</p>
+                                                                      <p class="p-padding" style="font-size: 10px; color: #ffffff; margin-bottom: 15px; font-family: Arial, sans-serif; line-height: 12px; font-weight: normal; margin-top: 0px">[{Cologuard_KOLlocation__c}]</p>
+                                                                    </th>
+                                                                    <th align="right" valign="bottom" width="35%" class="download-icon">
+                                                                      <img src="[{Cologuard_KOLimage__c}]" alt="KOL photo" width="155" class="kol-img g-img" style="vertical-align: bottom; display: block; pointer-events: none !important; width: 155px" class="g-img"
+                                                                      />
+                                                                    </th>
+                                                                  </tr>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td style="padding-top: 0px; padding-bottom: 0px; padding: 0" cellspacing="0" align="center">
+                                                                <img style="vertical-align: top; padding: 0; margin: 0" src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/kIGbgzOJumwpRfAT2D6KN1YUSCe3a5Ps4i8Vdo9l.png" alt="" width="480" class="full-width" />
+                                                              </td>
+                                                            </tr>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td width="480" align="center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="480" valign="top">
+                                                    <table role="presentation" width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td style="padding-left: 26px; padding-right: 26px; padding-top: 2px; padding-bottom: 0px" class="mobile-padding">
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                              <tr>
+                                                                <td style="font-size: 18px; color: #001963; line-height: 20px; padding-top: 0px; padding-bottom: 20px; font-family: Arial, sans-serif">
+                                                                  <strong>An effective CRC screening option that patients can adhere to is vital for screening eligible patients in your area.</strong>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                      <td bgcolor="#001963" class="map_text1 download-icon" width="44%" align="top" style="padding-bottom: 0px" valign="top">
+                                                                        <table role="presentation" cellpadding="0" cellspacing="0">
+                                                                          <tr>
+                                                                            <td>
+                                                                              <img class="mobile-width g-img" style="padding: 0px; display: block" src="[{Cologuard_map__c}]" alt="market photo" width="188" class="g-img" />
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td class="annual" bgcolor="#0087ed" align="center" style="font-size: 12px; font-family: Arial, sans-serif; color: #ffffff; height: 30px">
+                                                                              <span style="white-space: nowrap"><strong> Annual Incidence per 100,000 </strong></span>
+                                                                            </td>
+                                                                          </tr>
+                                                                        </table>
+                                                                      </td>
+                                                                      <td align="center" class="map_text" width="56%" bgcolor="#001963" valign="top" style="padding: 0px; background-color: #001963; mso-line-height-rule: exactly">
+                                                                        <table role="presentation" cellpadding="0" cellspacing="0" valign="top">
+                                                                          <tr>
+                                                                            <td width="100%" align="center" class="did_you_know" style="padding-top: 10px; padding-bottom: 8px">
+                                                                              <img class="diduknow_img" style="display: block" src="https://treatmentperspectivescdnprod.azureedge.net/c284-p1-emailtemplate/eZGNIfqdhpcPz3CwaEjMOn6m8sx1o9UTrB2iSYRb.png" alt="Did you know" width="152" />
+                                                                            </td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                            <td>
+                                                                              <table role="presentation" cellpadding="0" cellspacing="0">
+                                                                                <tr>
+                                                                                  <td width="17%" style="padding-left: 21px" class="img-layer1">
+                                                                                    <img class="bracket_img" src="https://treatmentperspectivescdnprod.azureedge.net/c284-p1-emailtemplate/He7smdLkWA1xDVfY8SzBOKT9bX5jn3h4M6yCwINg.png" alt="Left Bracket" width="25" />
+                                                                                  </td>
+                                                                                  <td width="66%" class="text-box" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 19px; line-height: 21px; text-align: center; padding-top: 10px; padding-bottom: 10px">
+                                                                                    An estimated [{Cologuard_number__c}] people in [{Cologuard_market__c}], age 50+, will be diagnosed with CRC this
+                                                                                    <span style="white-space: nowrap">year.<sup class="superscript_11 mob-font" style="font-size: 11px; line-height: 0px; vertical-align: 6px">1,2*</sup> </span>
+                                                                                  </td>
+                                                                                  <td width="17%" align="right" style="padding-right: 21px" class="img-layer2">
+                                                                                    <img class="bracket_img" src="https://treatmentperspectivescdnprod.azureedge.net/c284-p1-emailtemplate/FI2nKGr0USTYveCaELlp3XQVquHj75tZNcsD6fWM.png" alt="Right Bracket" width="25" />
+                                                                                  </td>
+                                                                                </tr>
+                                                                              </table>
+                                                                            </td>
+                                                                          </tr>
+                                                                        </table>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="font-size: 18px; color: #001963; line-height: 20px; padding-top: 21px; padding-bottom: 21px; font-family: Arial, sans-serif">
+                                                                  <strong
+                                                                    >Through high sensitivity, Cologuard effectively detects CRC and precancer as a best-in-class, noninvasive screening option.<sup class="superscript_11" style="font-size: 11px; line-height: 0px; vertical-align: 6px">3</sup></strong
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td class="padding_bot" style="padding-top: 0px; padding-bottom: 0px; font-family: Arial, sans-serif">
+                                                                  <table role="presentation" class="button-width" align="center" width="65%" cellpadding="0" cellspacing="0" valign="bottom">
+                                                                    <tr>
+                                                                      <td class="ios-align1" align="center" style="padding-bottom: 0px; padding-top: 0px">
+                                                                        <a
+                                                                          href="https://ad.doubleclick.net/ddm/trackclk/N1625429.3492207RELEVATEHEALTHGR/B29105258.367509064;dc_trk_aid=558369041;dc_trk_cid=192141079;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1"
+                                                                          target="_blank"
+                                                                          ><img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/83WiaGXbryE7xuqBC1KcLoUvQd5Ot2egFphkDMZn.png" alt="CTA 1" width="214" style="display: block" class="learn-more-btn" />
+                                                                        </a>
+                                                                        <div style="mso-hide: all; overflow: hidden; height: 1px; width: 1px; display: none; line-height: 0; visibility: hidden">
+                                                                          <a
+                                                                            href="[{Site-URL}]bot_trapper/Bot_trapper?schedule_id=[{Schedule-ID}]&template_name=[{Alert-ID}]&hcp_group_name=[{HCP-ID}]"
+                                                                            target="_blank"
+                                                                            id="tp_link1"
+                                                                            class="tp_link"
+                                                                            style="mso-hide: all; overflow: hidden; height: 1px; width: 1px; display: none; line-height: 0; visibility: hidden"
+                                                                            >TP Link</a
+                                                                          >
+                                                                        </div>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 22px; padding-bottom: 0px; font-size: 14px; line-height: 18px; font-family: Arial, sans-serif; padding-right: 3px; color: #001963">
+                                                                  <strong
+                                                                    >In a prospective, head-to-head, point-in-time, 90-site, pivotal study of 10,000 patients <span style="color: #0087ed">aged 50 to 84 years at average risk for CRC</span>, published in <em>The New England Journal of Medicine</em>,
+                                                                    Cologuard demonstrated<sup class="sup-9" style="font-size: 9px; line-height: 0px; vertical-align: 4.5px">3&dagger;</sup>:</strong
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td width="100%" align="top" style="padding-bottom: 0px; padding-top: 21px" class="download-icon">
+                                                                  <img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/kwcD1R0hmjbfgL5NWPAVJdYKZBlQpHIMUyuG4XsF.png" alt="" style="display: block" width="428" class="full-width g-img img-height"
+                                                                  />
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="font-size: 18px; color: #001963; line-height: 20px; padding-top: 17px; padding-bottom: 17px; font-family: Arial, sans-serif">
+                                                                  <strong>Cologuard is a proven option to effectively rule out CRC.<sup class="superscript_11" style="font-size: 11px; line-height: 0px; vertical-align: 6.5px">3</sup></strong>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td width="100%" align="top" style="padding-bottom: 0px" class="download-icon">
+                                                                  <img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/oDlGL2sp53SROB1TUfcenmMvFr4XYyJwkKZbV7Ej.png" alt="" style="display: block" width="428" class="full-width g-img img-height"
+                                                                  />
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="font-size: 12px; color: #000000; line-height: 15px; padding-top: 23px; padding-bottom: 20px; font-family: Arial, sans-serif" class="mobile-top">
+                                                                  False positives and false negatives did occur in this pivotal study. 13% of patients without colorectal cancer or advanced adenomas received a positive result (false positive), and 8% of patients with cancer received a negative result
+                                                                  (false negative). The clinical validation study was conducted in patients 50 years of age and older. Cologuard performance in patients ages 45 to 49 years was estimated by sub-group analysis of near-age groups.<sup
+                                                                    class="superscript_10"
+                                                                    style="font-size: 8px; vertical-align: 3px"
+                                                                    >3</sup
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="font-size: 18px; color: #001963; line-height: 20px; padding-top: 0px; padding-bottom: 21px; font-family: Arial, sans-serif; text-align: center" align="center">
+                                                                  <strong>Choose Cologuard to help rule out CRC</strong>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td class="padding_bot">
+                                                                  <table role="presentation" class="button-width" align="center" width="100%" cellpadding="0" cellspacing="0" valign="bottom">
+                                                                    <tr>
+                                                                      <td width="80%" class="button_size" align="center" style="text-align: center; margin: 0 auto">
+                                                                        <a
+                                                                          href="https://ad.doubleclick.net/ddm/trackclk/N1625429.3492207RELEVATEHEALTHGR/B29105258.367509064;dc_trk_aid=558369041;dc_trk_cid=192141379;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1"
+                                                                          target="_blank"
+                                                                          ><img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/HGoBzb7qamj0fFIQprn412y6wkWveMcKDNxXAPtV.png" style="display: block; margin: 0 auto" alt="CTA 2" width="214" class="explore-btn" />
+                                                                        </a>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="font-size: 18px; padding-top: 22px; color: #001963; font-family: Arial, sans-serif; line-height: 20px; font-size: 18px">
+                                                                  <strong>Indications and Important Risk Information</strong>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px">
+                                                                  Cologuard is intended for the qualitative detection of colorectal neoplasia associated DNA markers and for the presence of occult hemoglobin in human stool. A positive result may indicate the presence of colorectal cancer (CRC) or
+                                                                  advanced adenoma (AA) and should be followed by colonoscopy. Cologuard is indicated to screen adults of either sex, 45 years or older, who are at typical average risk for CRC. Cologuard is not a replacement for diagnostic colonoscopy
+                                                                  or surveillance colonoscopy in high-risk individuals.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px">
+                                                                  Cologuard is not for high-risk individuals, including patients with a personal history of colorectal cancer and adenomas; have had a positive result from another colorectal cancer screening method within the last 6 months; have been
+                                                                  diagnosed with a condition associated with high risk for colorectal cancer such as IBD, chronic ulcerative colitis, Crohn’s disease; or have a family history of colorectal cancer, or certain hereditary syndromes.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px">
+                                                                  Positive Cologuard results should be referred to colonoscopy. A negative Cologuard test result does not guarantee absence of cancer or advanced adenoma. Following a negative result, patients should continue participating in a
+                                                                  screening program at an interval and with a method appropriate for the individual patient.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 20px">
+                                                                  False positives and false negatives do occur. In a clinical study, 13% of patients without colorectal cancer or advanced adenomas received a positive result (false positive) and 8% of patients with cancer received a negative result
+                                                                  (false negative). The clinical validation study was conducted in patients 50 years of age and older. Cologuard performance in patients ages 45 to 49 years was estimated by sub-group analysis of near-age groups.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; font-family: Arial, sans-serif; color: #000000; font-size: 14px; line-height: 20px">
+                                                                  Cologuard performance when used for repeat testing has not been evaluated or established. Rx only.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 11px; color: #000000; font-family: Arial, sans-serif; font-size: 11px; line-height: 15px">*Market areas shown on map based on Designated Media Areas (DMAs).</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 11px; line-height: 15px">
+                                                                  <span class="reg" style="font-family: Arial, sans-serif; font-size: 7px; line-height: 1; vertical-align: 3.7px; font-weight: normal">&dagger;</span>In the pivotal study, screening colonoscopy was the reference method.<sup
+                                                                    class="superscript_8"
+                                                                    style="font-size: 8px"
+                                                                    >3</sup
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; padding-bottom: 0px; color: #000000; font-family: Arial, sans-serif; font-size: 11px; line-height: 15px">
+                                                                  <span class="reg" style="font-family: Arial, sans-serif; font-size: 7px; line-height: 1; vertical-align: 4px; font-weight: normal">‡</span>Statistic calculated using data from the pivotal study and reported within the Ahlquist review
+                                                                  article. Cologuard sensitivity, per stage of cancer: I: 90% (n=29); II: 100% (n=21); III: 90% (n=10); IV: 75% (n=4).<sup class="superscript_8" style="font-size: 8px">4,5</sup>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 11px; line-height: 15px">
+                                                                  <span class="reg" style="font-family: Arial, sans-serif; font-size: 7px; line-height: 1; vertical-align: 4px; font-weight: normal">§</span>Cologuard specificity: 87% overall specificity, excluding CRC and advanced adenomas, and
+                                                                  including all nonadvanced adenomas, nonneoplastic findings, and negative results on colonoscopy. There was 90% specificity in participants with no lesions biopsied on colonoscopy.<sup class="superscript_8" style="font-size: 8px"
+                                                                    >3</sup
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 10px; color: #000000; font-family: Arial, sans-serif; font-size: 11px; line-height: 15px">
+                                                                  <span class="reg" style="font-family: Arial, sans-serif; font-size: 7px; line-height: 1; vertical-align: 4px; font-weight: normal">||</span>Negative predictive value (NPV) is defined as the probability that disease is absent in those
+                                                                  with a negative result; it is highly dependent on the prevalence of the disease. NPV was derived from the patient population evaluated in the lmperiale et al publication.<sup class="superscript_8" style="font-size: 8px">3</sup>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 12px; padding-bottom: 15px; color: #000000; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px" class="line-top-align">
+                                                                  <strong>References: 1.</strong> Explore census data. United States Census Bureau. Accessed March 24, 2023.
+                                                                  <span class="nobr">h&shy;tt&shy;ps:&shy;//</span>data.census&shy;&#8203;.gov/table?q=&shy;&#8203;population+by+&shy;&#8203;county+and+age&&shy;&#8203;tid=&shy;&#8203;ACSST1Y2021.&shy;&#8203;S0101
+                                                                  <span class="nobr"><strong>2.</strong> State</span> cancer profiles incidence rates table. National Cancer Institute. Accessed March 24, 2023.
+                                                                  <span class="nobr">h&shy;tt&shy;ps&shy;://</span>&shy;&#8203;statecancerprofiles&shy;.&shy;&#8203;cancer.&shy;gov/&shy;&#8203;incidencerates/index.php <strong>3.</strong> Imperiale TF, Ransohoff DF, Itzkowitz SH, et al. Multitarget stool DNA testing
+                                                                  for colorectal-cancer screening. <em>N Engl J Med.</em> 2014;&shy;370(14):1287-1297. <span class="nobr"> <strong>4.</strong> Ahlquist</span> DA. Multi-target stool DNA test: a new high bar for noninvasive screening.
+                                                                  <em>Dig Dis Sci.</em> 2015;&shy;60(3):&shy;623-633. <span class="nobr"> <strong>5.</strong> Cologuard<sup style="font-size: 9px; line-height: 0px; vertical-align: 5px" class="superscript-9">&reg;</sup></span> Clinician Brochure.
+                                                                  Madison, WI: Exact Sciences Corporation.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 15px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; border-top: 1px solid #707070; color: #000000">
+                                                                  This communication is brought to you by Exact Sciences Corporation.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">
+                                                                  [{Cologuard_from__c}] has received an honorarium for participating in this promotion. [{Cologuard_from__c}] is presenting on behalf of Exact Sciences. Views, opinions, and information provided are based on the speakers’ own clinical
+                                                                  practice and experience and are not clinical, diagnostic, or treatment advice for any particular patient. Providers should use their clinical judgment and experience when deciding how to diagnose or treat patients. Exact Sciences does
+                                                                  not recommend or endorse any particular course of treatment or medical choice.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">
+                                                                  Please DO NOT REPLY TO THIS MESSAGE. Exact Sciences Corporation will not receive a message if you reply.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">
+                                                                  The above material is intended specifically and exclusively for healthcare professionals in the United States only.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000 !important">
+                                                                  This communication is sent by Relevate Health Group from <br class="outlook-br" />
+                                                                  <span class="nobr" style="white-space: nowrap !important">kol-views.&shy;com</span> on behalf of Exact Sciences Corporation.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 10px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">
+                                                                  You are receiving this email because you agreed to receive messages from a business that Relevate Health Group has engaged for communications.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" class="mobile-right" style="padding-top: 0px; padding-bottom: 8px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; padding-right: 10px; color: #000000">
+                                                                  To report suspected Adverse Events or product problems, please contact the Exact Sciences Laboratories Customer Care Center at <span style="white-space: nowrap">&#8203;1&shy;-844&#8203;-870-8870&#8203;.</span> You can also contact the US
+                                                                  <span class="nobr">Food and</span> Drug Administration <span style="white-space: nowrap">(FDA)</span> directly at <span style="white-space: nowrap"> 1-&#8203;800-&#8203;FDA-&#8203;1088 or </span> visit
+                                                                  <span style="color: #000000"
+                                                                    ><a class="link_col1 nobr" style="color: #000000; text-decoration: underline" target="_blank" href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program"><u>www.fda.gov/MedWatch</u></a
+                                                                    >.</span
+                                                                  >
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 0px; color: #000000 !important; font-family: Arial, sans-serif; padding-bottom: 19px; padding-right: 0px; font-size: 14px; line-height: 18px">
+                                                                  To be removed from future emails from <span class="nobr">kol-views.&shy;com,</span> please <a style="color: #000000; text-decoration: underline" target="_blank" href="[{Unsubscribe-Link}]"><u>unsubscribe</u></a
+                                                                  >.
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 20px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">
+                                                                  <p style="margin: 0px; margin-top: 0px; padding: 0px">Relevate Health Group, LLC.</p>
+                                                                  <p style="margin: 0px; margin-top: 0px; padding: 0px">&shy;4&shy;270 Ivy Pointe Blvd #220</p>
+                                                                  <p style="margin: 0px; margin-top: 0px; padding: 0px">&shy;Cincinnati&shy;, OH&shy; 45245</p>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td style="padding-top: 0px; padding-bottom: 20px; font-family: Arial, sans-serif; font-size: 14px; line-height: 18px; color: #000000">Cologuard is a registered trademark of Exact Sciences Corporation.</td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="top" style="padding-top: 0px; color: #000000; font-size: 14px; line-height: 18px; color: #000000; font-family: Arial, sans-serif">
+                                                                  <p class="p-padding" style="font-size: 14px; line-height: 18px; color: #000000; font-family: Arial, sans-serif; margin: 0px; padding: 0px">©2023 Exact Sciences Corporation. All rights reserved.</p>
+                                                                  <p style="font-size: 14px; line-height: 18px; color: #000000; font-family: Arial, sans-serif; margin: 0px; padding: 0px" class="p-padding">M-US-CG-04028-October 2023</p>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td width="50%" align="left" valign="top" style="padding-top: 25px; padding-bottom: 25px; color: #000000">
+                                                                  <a href="https://www.exactsciences.com/" target="_blank"
+                                                                    ><img src="https://treatmentperspectivescdnprod.azureedge.net/c318-p1-emailtemplate/dDHzAUTenMx8cRF3oKruZLtBlbjfh2vmVJp0iYIP.png" alt="ES logo" width="266" height="57" class="footer-logo" />
+                                                                    <img
+                                                                      src="https://ad.doubleclick.net/ddm/trackimp/N1625429.3492207RELEVATEHEALTHGR/B29105258.367509064;dc_trk_aid=558369041;dc_trk_cid=192698931;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1?"
+                                                                      attributionsrc
+                                                                      border="0"
+                                                                      height="1"
+                                                                      width="1"
+                                                                      alt="Advertisement"
+                                                                  /></a>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <style data-ignore-inlining>@media (prefers-color-scheme: dark) { #_t::before {content:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?rd&i=[{Cipher-ID}]');}} @media (prefers-color-scheme: light) { #_t::before {content:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?rl&i=[{Cipher-ID}]');}} @media print{ #_t {background-image:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?p&i=[{Cipher-ID}]');}} div.OutlookMessageHeader {background-image:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?f&i=[{Cipher-ID}]')} table.moz-email-headers-table {background-image:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?f&i=[{Cipher-ID}]')} blockquote #_t {background-image:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?f&i=[{Cipher-ID}]')} #MailContainerBody #_t {background-image:url('https://8dzfex3e.emltrk.com/v2/8dzfex3e?f&i=[{Cipher-ID}]')}</style><div id="_t"></div>
+<img src="https://8dzfex3e.emltrk.com/v2/8dzfex3e?i=[{Cipher-ID}]" width="1" height="1" border="0" alt="" />
+  </body>
+</html>
